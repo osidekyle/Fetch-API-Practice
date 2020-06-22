@@ -22,10 +22,10 @@ function getUsers(){
         let output = '<h2>Users</h2>';
         data.forEach(function(user){
             output+= `
-            <ul>
-            <li>ID:${user.id} </li>
-            <li>Name:${user.name} </li>
-            <li>Email:${user.email} </li>
+            <ul class="list-group">
+            <li class="list-group-item">ID:${user.id} </li>
+            <li class="list-group-item">Name:${user.name} </li>
+            <li class="list-group-item">Email:${user.email} </li>
             </ul>`
         })
         document.getElementById('output').innerHTML=output;
